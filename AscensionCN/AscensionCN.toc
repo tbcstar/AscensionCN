@@ -1,0 +1,30 @@
+## Interface: 30300
+## Title: AscensionCN |cff33ff99中文|r
+## Notes: Ascension（Conquest of Azeroth）的法术、天赋、物品、NPC和任务的中文翻译
+## Author: HideXs
+## Version: 1.5.10
+## SavedVariables: AscensionESDB
+
+data\Globals.lua
+data\Patterns.lua
+data\CustomUI.lua
+data\ServerUI.lua
+data\UIStrings.lua
+data\Achievements.lua
+data\SpellNames.lua
+data\SpellDescs.lua
+data\DescExtra.lua
+data\SpellTips.lua
+data\SpellRanks.lua
+data\ItemNames.lua
+data\ItemDescs.lua
+data\UnitNames.lua
+data\Quests.lua
+data\Gossip.lua
+data\Voices.lua
+data\Errors.lua
+data\Chat.lua
+Core.lua
+Voice.lua
+Errors.lua
+Chat.lua

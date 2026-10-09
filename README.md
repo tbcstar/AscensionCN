@@ -1,102 +1,59 @@
-# AscensionES — Traducción al español de Ascension WoW
+# AscensionCN — Ascension WoW 的中文翻译
 
-Addon que traduce al **español de España** el contenido de [Ascension WoW](https://ascension.gg): misiones, hechizos, objetos, NPCs, logros e interfaz. Compatible con **Conquest of Azeroth** y con el modo **Wildcard** (Season 10).
+一个将 Ascension WoW 的内容翻译为中文的插件：任务、法术、物品、NPC、成就和界面。兼容 Conquest of Azeroth 和 Wildcard 模式（第 10 赛季）。
 
-No requiere modificar el cliente ni los MPQ: es un addon normal, compatible con el launcher oficial.
+无需修改客户端或 MPQ 文件：它是一个普通插件，兼容官方启动器。
 
-Se compone de dos piezas:
 
 | | |
 |---|---|
-| **AscensionES** | La traducción. Es lo único imprescindible. |
-| **AscensionES Voces** | Módulo **opcional** que narra las misiones en voz alta. |
+| **AscensionCN** | 翻译本体。这是唯一必需的部分。 |
 
 ---
 
-## 📥 Instalación de la traducción
+## 📥 安装翻译
 
-1. Descarga `AscensionES-1.5.6.zip` desde la sección **[Releases](../../releases)**.
-2. Extrae la carpeta `AscensionES` dentro de `Interface\AddOns\` de tu cliente
-   (normalmente `...\Ascension\Launcher\resources\ascension-live\Interface\AddOns\`).
-3. Inicia el juego. Si ya estabas dentro, sal hasta la **selección de personaje** y vuelve a entrar (el cliente solo detecta addons nuevos ahí).
-4. En la lista de AddOns, asegúrate de que **AscensionES español** está activado.
+1. 从 Releases 部分下载 AscensionCN-1.5.6.zip。
+2. 将 AscensionCN 文件夹解压到客户端的 Interface\AddOns\ 中
+   （通常是 ...\Ascension\Launcher\resources\ascension-live\Interface\AddOns\）。
+3. 启动游戏。如果你已经在游戏中，请退出到角色选择界面并重新进入（客户端只会在那里检测新插件）。
+4. 在插件列表中，确保 AscensionCN español 已启用。
 
-## ✨ Qué traduce
+## ✨ 翻译内容
 
-| Contenido | Entradas |
+| 内容 | 条目数 |
 |---|---:|
-| Nombres de hechizos y talentos | 67.711 |
-| Descripciones de hechizos, talentos y tooltips | 107.611 |
-| Objetos (nombres, descripciones, efectos Equipar/Uso) | 150.777 |
-| **Misiones** (título, descripción, objetivos, progreso y entrega) | 13.987 |
-| **Nombres de NPC** | 23.003 |
-| **Diálogos de NPC** (ventana, saludos, frases al chat y burbujas) | ~69.000 |
-| Logros (títulos, descripciones, criterios, categorías) | ~22.600 |
-| Interfaz del servidor, errores y mensajes de chat/sistema | 9.176 |
-| Voces oficiales en español («No tengo maná…») por raza y género | 1.511 clips |
+| 法术和天赋名称 | 67.711 |
+| 法术、天赋和提示描述 | 107.611 |
+| 物品（名称、描述、装备/使用效果） | 150.777 |
+| **任务** （标题、描述、目标、进度和交付） | 13.987 |
+| **NPC 名称** | 23.003 |
+| **NPC 对话** （窗口、问候、聊天短语和气泡） | ~69.000 |
+| 成就（标题、描述、标准、类别） | ~22.600 |
+| 服务器界面、错误和聊天/系统消息 | 9.176 |
 
-- Cubre el **contenido propio de Ascension**, que no existe traducido en ningún otro sitio: cartas de habilidad, libro de hechizos, entrenador de clase, Worldforged, notificaciones…
-- **Modo Wildcard (Season 10)**: panel de Progresión de personaje, ramas de talento, esencias, cartas de habilidad, colecciones de apariencia y guardarropa.
-- Terminología cuidada y coherente: las habilidades citadas dentro de otras descripciones usan siempre su nombre español canónico.
-- Si el servidor cambia un texto en un parche, el addon lo deja en inglés antes que mostrar una traducción incorrecta.
-
----
-
-## 🔊 Módulo opcional: voz en las misiones
-
-**AscensionES Voces** narra las misiones en español: al aceptarlas, consultarlas o entregarlas, escucharás su texto en voz alta mientras juegas.
-
-- Narra la **descripción**, los **objetivos**, el **progreso** y la **entrega**.
-- Dos voces, **narrador y narradora**, según el sexo del personaje que da la misión.
-  Las misiones propias de Ascension, al no tener datos del personaje, usan la voz de narrador.
-- Las voces son **sintéticas**, no grabaciones humanas.
-- Ocupa unos **7,5 GB** en disco. Requiere tener AscensionES instalado.
-
-### Instalación de las voces
-
-Se reparte en **4 archivos** por su tamaño. **No hace falta ningún programa especial**: son ZIP normales que Windows abre solo.
-
-1. Descarga los 4 desde [Releases](../../releases):
-   `AscensionES_Voces-1.0.0-parte1de4.zip` … `parte4de4.zip` (~1,7 GB cada uno)
-2. Extrae **cada uno** en `Interface\AddOns`: clic derecho → **Extraer todo…**
-   Se combinan solos en la misma carpeta.
-3. **Reinicia el juego.** Un `/reload` no basta: el cliente lee los sonidos al arrancar.
-
-> **¿Y si te dejas alguna parte?** No pasa nada malo: el addon te avisa con una ventana al entrar, diciéndote **qué partes faltan** y dónde bajarlas. Mientras tanto funciona con las voces que sí tengas. Las partes van ordenadas por número de misión, así que la parte 1 cubre las de nivel bajo.
-
-Para activar o desactivar la voz: **Interfaz → AddOns → AscensionES → Voces**, o el comando `/asesvoz`.
+- 涵盖 **Ascension** 独有内容，这些内容在其他任何地方都没有翻译：技能卡、法术书、职业训练师、Worldforged、通知等。
+- **Wildcard 模式（第 10 赛季）**: 角色 progression 面板、天赋树、精华、技能卡、外观收藏和衣柜。
+- 术语经过精心处理且一致：在其他描述中引用的技能始终使用其规范的中文名称。
+- 如果服务器在补丁中更改了文本，插件会将其保留为英文，而不是显示不正确的翻译。
 
 ---
 
-## 🚫 Qué NO traduce (por diseño)
+## 🚫 不翻译的内容（设计如此）
 
-- **NPC propios de Ascension**: no tienen nombre oficial en español y se muestran en inglés; las misiones que los citan conservan el nombre tal cual para no romper la referencia. (Los NPC estándar de Blizzard sí van traducidos con su nombre oficial.)
-- **El nombre flotante sin barra de vida**: lo dibuja el motor del juego y ningún addon puede tocarlo — con los nameplates activados (tecla V) sí se traduce.
-- **La pantalla de selección de reino**: los addons no se cargan ahí.
+- **Ascension 独有的 NPC**: 它们没有官方中文名称，因此显示为英文；引用它们的任务会保留原名，以免破坏引用。（暴雪的标准 NPC 则使用其官方名称翻译。）
+- **没有血条的浮动名称**: 由游戏引擎绘制，任何插件都无法修改——启用姓名板（按键 V）后可以翻译。
+- **服务器选择界面**: 插件不会在那里加载。
 
-## ⚙️ Configuración
+## ⚙️ 配置
 
-- Panel de opciones: **Interfaz → AddOns → AscensionES** (activa o desactiva cada módulo).
-- Comando `/ases` en el chat: `hechizos`, `objetos`, `misiones`, `dialogos`, `logros`, `interfaz`, `chat`, `errores`, `voz`, `refrescar`…
+- 选项面板：**界面 → 插件 → AscensionCN** （启用或禁用每个模块）。
+- 聊天命令 `/ases` ：`hechizos`, `objetos`, `misiones`, `dialogos`, `logros`, `interfaz`, `chat`, `errores`, `voz`, `refrescar`…
 
-## 🩺 ¿No te aparece el addon o no carga?
+## 🩺 插件不显示或无法加载？
 
-Usa la [**herramienta de diagnóstico**](DIAGNOSTICO.md): un doble clic y te dice qué pasa (ruta equivocada, extracción incompleta, antivirus…).
+使用**诊断工具**：双击即可告诉你问题所在（路径错误、解压不完整、杀毒软件等）。
 
-## 🐛 ¿Has visto un error de traducción?
+## 🐛 看到翻译错误？
 
-Abre una [Issue con el formulario de errores](../../issues/new/choose): te pedirá el nombre exacto, dónde aparece y una captura. Las correcciones se incorporan en la siguiente versión.
-
-## 🤝 Colabora con el proyecto
-
-AscensionES es **gratuito y siempre lo será**. Si te ha hecho disfrutar más del juego en tu idioma y quieres colaborar, puedes hacerlo aquí:
-
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Colabora-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/hidexs)
-
-Cualquier aportación ayuda a seguir revisando textos y a cubrir el contenido nuevo que va saliendo.
-
-## 🖋️ Autoría
-
-Traducción y addon creados por **HideXs** (2026). Cada release legítima incluye una firma de autoría verificable (v1.5.6: `AES/2026-07-24/e7ac5aba4dd6cbac/HideXs`); desconfía de copias que no la lleven.
-
-© 2026 HideXs — todos los derechos reservados sobre la traducción y el código del addon. No redistribuir versiones modificadas sin permiso. World of Warcraft® es una marca de Blizzard Entertainment; Ascension es un proyecto independiente de terceros.
+打开一个使用错误表单的 Issue：它会要求你提供确切名称、出现位置和截图。修正将在下一个版本中合并。
