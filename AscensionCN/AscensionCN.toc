@@ -21,10 +21,8 @@ data\ItemDescs.lua
 data\UnitNames.lua
 data\Quests.lua
 data\Gossip.lua
-data\Voices.lua
 data\Errors.lua
 data\Chat.lua
 Core.lua
-Voice.lua
 Errors.lua
 Chat.lua

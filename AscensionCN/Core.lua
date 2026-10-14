@@ -1594,7 +1594,6 @@ local OPTIONS_LIST = {
     { key = "ui", text = "界面和菜单（更改需要 /reload）" },
     { key = "errores", text = "屏幕错误消息", setter = "SetErrorsEnabled" },
     { key = "chat", text = "聊天消息（拾取、经验、系统……）", setter = "SetChatEnabled" },
-    { key = "voice", text = "中文错误语音（\"no tengo maná\"……）", setter = "SetVoiceEnabled" },
 }
 
 local function BuildOptionsPanel()
@@ -3141,11 +3140,6 @@ SlashCmdList["AscensionCN"] = function(msg)
         local newState = not (db.errores ~= false)
         if AES.SetErrorsEnabled then AES.SetErrorsEnabled(newState) else db.errores = newState end
         DEFAULT_CHAT_FRAME:AddMessage("|cff33ff99AscensionCN|r 错误消息中文：" .. status(db.errores))
-        return
-    elseif msg == "voz" or msg == "voice" or msg == "语音" then
-        local newState = not (db.voice ~= false)
-        if AES.SetVoiceEnabled then AES.SetVoiceEnabled(newState) else db.voice = newState end
-        DEFAULT_CHAT_FRAME:AddMessage("|cff33ff99AscensionCN|r 中文错误语音：" .. status(db.voice))
         return
     elseif msg == "refrescar" or msg == "refresh" or msg == "刷新" then
         RetranslateStaticUI()
